@@ -4,7 +4,7 @@ const app = express()
 const indexRouter = require('./routes/index')
 const usersRouter = require('./routes/users')
 const dashboardRouter = require ('./routes/dashboard')
-const PORT = process.env.port || 8000
+const PORT = process.env.PORT || 8000
 
 app.use(express.json())
 app.use('/',indexRouter)
